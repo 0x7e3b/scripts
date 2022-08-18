@@ -1,3 +1,5 @@
+diskpart /s CreatePartitions-UEFI.txt
+
 call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 
 dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
