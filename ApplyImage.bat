@@ -5,6 +5,7 @@ dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
 W:\Windows\System32\bcdboot W:\Windows /s S:
 
 md R:\Recovery\WindowsRE
+
 xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
 
 W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows
