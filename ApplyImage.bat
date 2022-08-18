@@ -1,6 +1,9 @@
 diskpart /s CreatePartitions-UEFI.txt
 call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
-dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
+set /p wimfile=Please enter the WIM-File location:
+dism /Get-ImageInfo /ImageFile:%wimfile%
+set /p wimindex=Please enter the edition number:
+dism /Apply-Image /ImageFile:%wimfile% /Index:%wimindex% /ApplyDir:W:\
 dism /Image:W:\ /Add-Driver /Driver:%2 /recurse
 W:\Windows\System32\bcdboot W:\Windows /s S:
 md R:\Recovery\WindowsRE
