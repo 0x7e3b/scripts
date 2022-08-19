@@ -3,7 +3,6 @@
 @if %1.==. echo Example: ApplyImage D:\install.wim
 @if %1.==. goto END
 
-:INSTALL
 diskpart /s CreatePartitions-UEFI.txt
 @call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 dism /Get-ImageInfo /ImageFile:%1
