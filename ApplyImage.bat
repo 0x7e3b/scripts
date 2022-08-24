@@ -5,7 +5,7 @@
 
 @echo list disk> listdisks
 diskpart /s listdisks
-rm listdisks
+del listdisks
 
 @echo == Please select a disk ==
 @set /p DISKID=Disk ID:
