@@ -32,7 +32,7 @@ del listdisks
 diskpart /s createpartitions
 @call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 dism /Get-ImageInfo /ImageFile:%1
-@echo == Please enter the Index ID of the Windows Edtion you want to install ==
+@echo == Please enter the Index ID of the Windows Edition you want to install ==
 @set /p wimindex=Index ID:
 dism /Apply-Image /ImageFile:%1 /Index:%wimindex% /ApplyDir:W:\
 @echo == Do you want to add drivers? ==
