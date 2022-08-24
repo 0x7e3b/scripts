@@ -53,5 +53,5 @@ md R:\Recovery\WindowsRE
 xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
 W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows
 W:\Windows\System32\Reagentc /Info /Target W:\Windows
-powershell -c "&{Get-ProvisionedAppPackage -Path W:\ | Remove-ProvisionedAppPackage -Path W:\}"
+
 :END
