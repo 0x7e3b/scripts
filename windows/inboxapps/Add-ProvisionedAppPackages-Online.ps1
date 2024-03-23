@@ -1,3 +1,4 @@
+cd ..\Inbox_Apps
 Add-ProvisionedAppPackage -Online -PackagePath Microsoft.AV1VideoExtension_8wekyb3d8bbwe.x64.appx     -LicensePath Microsoft.AV1VideoExtension_8wekyb3d8bbwe.x64.xml   
 Add-ProvisionedAppPackage -Online -PackagePath Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -LicensePath Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.xml     -DependencyPackagePath Microsoft.UI.Xaml.x64.2.7.appx,Microsoft.VCLibs.x64.14.00.UWPDesktop.appx
 Add-ProvisionedAppPackage -Online -PackagePath Microsoft.HEIFImageExtension_8wekyb3d8bbwe.x64.appx    -LicensePath Microsoft.HEIFImageExtension_8wekyb3d8bbwe.x64.xml  
