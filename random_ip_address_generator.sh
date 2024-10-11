@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define your API key here
-API_KEY="5b8a5211-984f-4cc9-867f-adb1a05c951f"
+API_KEY="PLACE_API_KEY_HERE"
 
 # Generate two random numbers between 0 and 255 using Random.org
 response=$(curl -s -X POST -H "Content-Type: application/json" -d '{
