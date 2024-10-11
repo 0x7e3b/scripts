@@ -1,5 +1,5 @@
 # Define your API key here
-$apiKey = "5b8a5211-984f-4cc9-867f-adb1a05c951f"
+$apiKey = "PLACE_API_KEY_HERE"
 
 # Create the JSON payload for the request
 $body = @{
